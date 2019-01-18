@@ -16,13 +16,12 @@ body {
 
 .explore {
     color: rgb(228, 228, 228);
-    margin: 170px auto 0 auto;
+    margin: 120px auto 0 auto;
     text-align: center;
     width: 80%;
 }
 
 .discover {
-    margin-top: 170px;
     padding: 50px 0;
 }
 
