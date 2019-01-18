@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.background {
+    background: linear-gradient(to right, rgba(30, 31, 29, 0.4), rgba(30, 31, 29, 0.4)), url('../images/naomi-8.jpg') no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.explore {
+    color: rgb(228, 228, 228);
+    margin: 170px auto 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.discover {
+
+    margin-top: 170px;
+    padding: 50px 0;
+}
+
+.small-title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.title {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.explore-btn {
+    background: rgb(14, 177, 218);
+    border: 2px solid rgb(14, 177, 218);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.explore-btn:hover {
+    border: 2px solid rgb(14, 177, 218);
+    color: rgb(255, 255, 255);
+    transition: .3s ease;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+.logo {
+    color: rgb(20, 20, 20);
+    float: left;
+}
+
+.logo a {
+    color: rgb(20, 20, 20);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: auto;
+    width: 120px;
+}
+
+.link {
+    float: right;
+}
+
+.link a {
+    color: rgb(20, 20, 20);
+    margin-left: 22px;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.naomi {
+    margin-top: 90px;
+}
+
+.photo {
+    float: left;
+    height: 280px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 23.6%;
+}
+
+
+.photo:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.gallery {
+    height: 300px;
+    margin-top: 40px;
+}
+
+
+.photo:first-child{
+    margin-left: 0;
+}
+
+.img-responsive {
+    height: 100%;
+    width: 100%;
+}
+
+.photo img {
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.big {
+    color: rgb(208, 208, 208);
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    bottom: 100%;
+    position: absolute;
+    background:rgba(122, 121, 121, 0.3);
+    overflow: hidden;
+    height: 0;
+    transition: .4s ease;
+    width: 100%; 
+}
+
+
+
+
+
+.sample {
+    height: auto;
+    width: 20%;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .gallery {
+        height: auto;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .photo {
+        width: 23.2%;
+    }
+
+    .photo img {
+        object-fit: fill;
+    }
+    
+  }
+
+
+@media only screen and (min-device-width: 20rem) and (max-device-width: 36.625rem) {
+
+    .gallery {
+        height: auto;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .photo {
+        display: block;
+        float: none;
+        height: auto;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .photo img {
+        object-fit: fill;
+        width: 100%;
+    }
+
+    .big {
+        font-size: 65px;
+    }
+
+}
